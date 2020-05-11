@@ -2642,13 +2642,15 @@ class sbb_newspapers:
             region_order_sub = ET.SubElement(region_order, 'OrderedGroup')
             
             region_order_sub.set('id',"ro357564684568544579089")
-    
+            indexer_region=0
             #args_sort=order_of_texts
             for vj in order_of_texts:
                 name="coord_text_"+str(vj)
                 name = ET.SubElement(region_order_sub, 'RegionRefIndexed')
-                name.set('index',str(order_of_texts[vj]) )
+                #name.set('index',str(order_of_texts[vj]) )
+                name.set('index',str(indexer_region) )
                 name.set('regionRef',id_of_texts[vj])
+                indexer_region+=1
     
     
             id_indexer=0

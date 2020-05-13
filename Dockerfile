@@ -8,6 +8,6 @@ RUN apt-get update \
     && apt-get install --no-install-recommends -y vim libsm6 libxext6 libxrender-dev \ 
     && pip3 install -r ./requirements.txt 
 
-LABEL name="Newspaper-Reagion-and-Readingorder"
+LABEL name="Newspaper region and reading-order"
 
 ENTRYPOINT ["python", "sbb_newspapers.py"]

@@ -1,0 +1,9 @@
+seaborn
+opencv-python
+keras
+tqdm
+shapely
+imutils
+scikit-learn
+click
+scipy
